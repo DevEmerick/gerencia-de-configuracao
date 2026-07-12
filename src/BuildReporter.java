@@ -9,7 +9,7 @@ public class BuildReporter {
     public static void main(String[] args) {
         // Coleta a data e hora do momento exato do build.
         String timestamp = LocalDateTime.now()
-            .format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss"))
+            .format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss"));
 
         // Estrutura o HTML que sera o artefato de entrega.
         String htmlContent = "<!DOCTYPE html>\n"
